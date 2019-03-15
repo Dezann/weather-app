@@ -1,8 +1,8 @@
 body{
-    background-image: url("../assets/bg.jpg");
+    /* background-image: url("../assets/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 .content{
     display: flex;
@@ -10,14 +10,14 @@ body{
     height: 100%;
 }
 .left-column{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
 }
 .right-column{
-    width: 50%
+    width: 60%
 }
 .weather-wrapper{
     display: flex;
