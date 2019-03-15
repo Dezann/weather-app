@@ -1,0 +1,33 @@
+body{
+    background-image: url("../assets/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.left-column{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.right-column{
+    width: 50%
+}
+.weather-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location, .degrees{
+    font-size: 10vh;
+}
+.short-weather-info{
+    font-size: 8vh;
+}
