@@ -3,10 +3,8 @@ import "./WelcomePage.css"
 
 class WelcomePage extends Component {
     state = {
-        cityInput: React.createRef()
+        cityInput: ""
     }
-
-
 
     render() {
         return (
@@ -14,8 +12,8 @@ class WelcomePage extends Component {
                 <div className="content">
                     <div className="welcome-page-wrapper">
                         <p className="welcome-text">Weather app</p>
-                        <input className="city-input" placeholder="Enter location..."></input>
-                        <button className="submit-btn">SUBMIT</button>
+                        <input className="city-input" onChange={e => { this.setState({ cityInput: e.target.value }) }} placeholder="Enter location..."></input>
+                        <button className="submit-btn" onClick={e => { this.props.onSubmit(this.state.cityInput) }}>SUBMIT</button>
                     </div>
                 </div>
             </React.Fragment >
