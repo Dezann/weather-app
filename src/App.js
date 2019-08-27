@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import WeatherPage from "./components/WeatherPage"
 import './App.css';
 import WelcomePage from './components/WelcomePage';
+import Popup from './components/Popup';
 
 const apiKey = 'd21951248aeab319021a3d9fb808a04b'
 
@@ -12,10 +13,15 @@ class App extends Component {
     forecastData: null,
     x_cord: null,
     y_cord: null,
+    showPopup: false
   }
   onSubmit = (city) => {
     this.getApiData(city)
 
+  }
+
+  togglePopup = () => {
+    this.setState({ showPopup: true });
   }
 
   getApiData = (city) => {
@@ -57,7 +63,6 @@ class App extends Component {
   render() {
     const gotResults = this.state.gotResults;
     return (
-
       !gotResults ? (<WelcomePage onSubmit={this.onSubmit} ></WelcomePage >) : (<WeatherPage weatherData={this.state.weatherData} mapData={this.state.mapData}></WeatherPage>)
 
     )

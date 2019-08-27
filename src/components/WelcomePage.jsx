@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./WelcomePage.css"
+import Popup from './Popup';
 
 class WelcomePage extends Component {
     state = {
@@ -12,6 +13,7 @@ class WelcomePage extends Component {
                 <div className="content">
                     <div className="welcome-page-wrapper">
                         <p className="welcome-text">Weather app</p>
+                        <Popup text="test"></Popup>
                         <input className="city-input" onChange={e => { this.setState({ cityInput: e.target.value }) }} placeholder="Enter location..."></input>
                         <button className="submit-btn" onClick={e => { this.props.onSubmit(this.state.cityInput) }}>SUBMIT</button>
                     </div>

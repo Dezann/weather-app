@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./WeatherPage.css"
 import Thunderstorm from "../assets/weather-backgrounds/thunderstorm.jpg"
-import Clear from "../assets/weather-backgrounds/thunderstorm.jpg"
+import Clear from "../assets/weather-backgrounds/clear.jpg"
 import Clouds from "../assets/weather-backgrounds/clouds.jpg"
 import Drizzle from "../assets/weather-backgrounds/drizzle.jpg"
 import Snow from "../assets/weather-backgrounds/snow.jpg"

@@ -1,12 +1,3 @@
-.weather-background{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:whitesmoke;
-}
 .left-column{
     width: 40%;
     display: flex;
